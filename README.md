@@ -134,8 +134,26 @@ python main.py
 
 ---
 
+## 🧪 Testing
+
+`test.py` and `test_update.py` are manual scripts used during development to exercise `BookService` methods directly (add/view/search/update/delete) against a live database connection. They are **not** an automated test suite — there are no assertions and they are not run via `pytest`. Automated tests with `pytest` are a planned improvement.
+
+---
+
+## 📝 Notes
+
+A couple of small housekeeping items are known and left as-is in this documentation pass:
+
+* `services/book_services.py` is an early, unused stub from refactoring — the application entry point (`main.py`) uses `services/book_service.py`.
+* `database/create_databse.py` is a duplicate of `create_database.py` (naming typo from an earlier commit).
+
+Both are safe to remove in a future cleanup pass.
+
+---
+
 ## 🔮 Future Improvements
 
+* Automated tests with `pytest`
 * User Authentication
 * Book Issue & Return Module
 * Student Management
