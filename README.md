@@ -50,6 +50,7 @@ Library_Management_System_V2/
 ├── utils/
 │   └── validator.py
 │
+├── .env.example
 ├── main.py
 ├── requirements.txt
 ├── README.md
@@ -93,13 +94,15 @@ MySQL Database
 pip install -r requirements.txt
 ```
 
-### 3. Configure MySQL
+### 3. Configure MySQL credentials
 
-Update the database credentials inside:
-
-```text
-config/db_config.py
+```bash
+cp .env.example .env
 ```
+
+Then edit `.env` and set `DB_PASSWORD` (and `DB_HOST` / `DB_USER` / `DB_DATABASE`
+if your setup differs from the defaults). `config/db_config.py` reads these
+values at import time — you don't edit that file directly.
 
 ### 4. Create the database
 
@@ -131,6 +134,7 @@ python main.py
 * Exception Handling
 * Modular Programming
 * Reusable Service Layer
+* Environment-based configuration (no hardcoded credentials)
 
 ---
 
