@@ -142,12 +142,12 @@ python main.py
 
 ## 📝 Notes
 
-A couple of small housekeeping items are known and left as-is in this documentation pass:
+A cleanup pass is pending (tracked, not yet executed) to remove two leftover files from earlier refactoring:
 
-* `services/book_services.py` is an early, unused stub from refactoring — the application entry point (`main.py`) uses `services/book_service.py`.
-* `database/create_databse.py` is a duplicate of `create_database.py` (naming typo from an earlier commit).
+* `services/book_services.py` — an early, unused stub. `main.py` uses `services/book_service.py`.
+* `database/create_databse.py` — a duplicate of `create_database.py` (naming typo from an earlier commit).
 
-Both are safe to remove in a future cleanup pass.
+Both are safe to delete and will be removed in a follow-up commit.
 
 ---
 
@@ -165,6 +165,9 @@ Both are safe to remove in a future cleanup pass.
 * GUI Version
 
 ---
+
+## 📝 License
+MIT — see [LICENSE](./LICENSE).
 
 ## 👨‍💻 Author
 
