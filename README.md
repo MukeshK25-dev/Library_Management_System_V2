@@ -140,17 +140,6 @@ python main.py
 
 ---
 
-## 📝 Notes
-
-A cleanup pass is pending (tracked, not yet executed) to remove two leftover files from earlier refactoring:
-
-* `services/book_services.py` — an early, unused stub. `main.py` uses `services/book_service.py`.
-* `database/create_databse.py` — a duplicate of `create_database.py` (naming typo from an earlier commit).
-
-Both are safe to delete and will be removed in a follow-up commit.
-
----
-
 ## 🔮 Future Improvements
 
 * Automated tests with `pytest`
